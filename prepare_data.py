@@ -99,23 +99,24 @@ def create_yolo_dataset(data_path, output_path, split='train'):
 
 def main():
     # Create dataset.yaml with correct YAML format
-    dataset_yaml = """path: ./dataset
-train: images/train
-val: images/test
+    dataset_yaml = """
+    path: D://mycoding/python/PKU_Deeplearning_Lab3/dataset  # 使用完整的绝对路径
+    train: D://mycoding/python/PKU_Deeplearning_Lab3/dataset/images/train  # 完整的训练集路径
+    val: D://mycoding/python/PKU_Deeplearning_Lab3/dataset/images/test    # 完整的验证集路径
 
-# Classes
-names:
-  0: 0
-  1: 1
-  2: 2
-  3: 3
-  4: 4
-  5: 5
-  6: 6
-  7: 7
-  8: 8
-  9: 9
-"""
+    # Classes
+    names:
+    0: 0
+    1: 1
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    6: 6
+    7: 7
+    8: 8
+    9: 9
+    """
     
     # Create dataset directory
     os.makedirs('dataset', exist_ok=True)
