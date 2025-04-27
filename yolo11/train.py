@@ -2,6 +2,11 @@ import torch
 from ultralytics import YOLO
 import os
 
+def see_chaocanshu():
+    model = YOLO('yolo11n.pt')
+    # 打印所有默认配置
+    print(model.model.args)
+    
 def train_model():
     # Check if CUDA is available and set device accordingly
     if torch.cuda.is_available():
@@ -29,4 +34,5 @@ def train_model():
     return results
 
 if __name__ == '__main__':
-    train_model()
+    see_chaocanshu()
+    # train_model()

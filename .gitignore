@@ -167,3 +167,8 @@ test.tar.gz
 dataset.zip
 /yolo11/dataset
 /yolo11/runs
+CNN/test_32x32.mat
+CNN/train_32x32.mat
+CNN/SVHN_grey.h5
+PKU_Deeplearning_Lab3.zip
+石卓凡-2401210687-深度学习lab3.pptx
